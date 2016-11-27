@@ -30,6 +30,7 @@ $myhotels = $stmt->fetchAll();
 //}
 
    var_dump($mainUrl);
+   var_dump(count($myhotels));
 for($i=0; $i<count($myhotels);$i++){
     var_dump($myhotels[$i]['image_url']);
         var_dump("<div class='item col-md-8 col-md-offset-2'>
