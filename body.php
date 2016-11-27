@@ -8,7 +8,7 @@ $urlParam = parse_url($url, PHP_URL_QUERY);
 var_dump($urlParam);
 //$mainUrl = mb_strimwidth($_SERVER['PHP_SELF'], 0, strlen($_SERVER['PHP_SELF'])-strlen(parse_url($url, PHP_URL_PATH))-1);
 //$mainUrl = $_SERVER['HTTP_HOST'];
-$mainUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$mainUrl = "https://$_SERVER[HTTP_HOST]";
 
 var_dump("mainUrl");
 var_dump($mainUrl);
@@ -59,9 +59,9 @@ $username = $_SESSION ? $_SESSION['login_user'] : "";
 echo " <div class='nav col-md-8 col-md-offset-2'>
         <a id='logo' href='$mainUrl/' class='col-md-2 col-sm-12'>HALFWORLD</a></li>
         <ul class='col-md-7 col-md-offset-3 col-sm-12 col-sm-offset-0'>
-            <li class='col-md-3 col-sm-12'><a href='$mainUrl/hotels'>HOTELS</a></li>
-            <li class='col-md-3 col-sm-12'><a href='$mainUrl/about-us'>ABOUT US</a></li>
-            <li class='col-md-3 col-sm-12'><a href='$mainUrl/contact'>CONTACT</a></li>";
+            <li class='col-md-3 col-sm-12'><a href='".$mainUrl."hotels'>HOTELS</a></li>
+            <li class='col-md-3 col-sm-12'><a href='".$mainUrl."about-us'>ABOUT US</a></li>
+            <li class='col-md-3 col-sm-12'><a href='".$mainUrl."contact'>CONTACT</a></li>";
 if($username){
     echo "<li class='col-md-3 col-sm-12' id='logIn'><a href='$mainUrl/personal'>MY ORDERS</i></a></li>"; 
 }
