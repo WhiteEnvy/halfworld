@@ -40,7 +40,7 @@ $orders->execute();
                  "<td>".$q['date_to'].
                  "<td>".$q['number_rooms'].
                  "<td>".$q['number_people'].
-                 "<td>".$q['total_price'];
+                 "<td>$".$q['total_price'];
         }    
     ?>
             
