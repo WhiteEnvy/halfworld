@@ -34,7 +34,7 @@ for($i=0; $i<count($myhotels);$i++){
         echo "<div class='item col-md-8 col-md-offset-2'>
             <img src='../img/".$myhotels[$i]['image_url']."' alt='' class='col-md-4'>
             <div class='description col-md-8'>
-                <h2>".$myhotels[$i]['name']."</h2>...
+                <h2>".$myhotels[$i]['name']."</h2>".trim(mb_strimwidth($myhotels[$i]['description'], 0, 150))."...
             </div>
             <a class='more' href='$mainUrl/hotels?name=".$myhotels[$i]['name']."'>
                 <p>Read more</p>
