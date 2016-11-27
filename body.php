@@ -45,7 +45,7 @@ echo "<body>";
 session_start(); 
 $username = $_SESSION ? $_SESSION['login_user'] : "";
 
-echo " <div class='nav col-md-8 col-md-offset-2'>
+echo " <div class='nav col-md-12'>
         <a id='logo' href='$mainUrl/' class='col-md-2 col-sm-12'>HALFWORLD</a></li>
         <ul class='col-md-7 col-md-offset-3 col-sm-12 col-sm-offset-0'>
             <li class='col-md-3 col-sm-12'><a href='$mainUrl/hotels'>HOTELS</a></li>
