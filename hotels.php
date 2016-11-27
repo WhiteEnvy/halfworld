@@ -32,7 +32,10 @@ $myhotels = $stmt->fetchAll();
    var_dump($mainUrl);
 for($i=0; $i<count($myhotels);$i++){
     var_dump($myhotels[$i]['image_url']);
-        echo "<div class='item col-md-8 col-md-offset-2'></div>"; 
+        echo "<div class='item col-md-8 col-md-offset-2'>
+            <img src='../img/".$myhotels[$i]['image_url']."' alt='' class='col-md-4'>
+            
+        </div>"; 
 }
 
 ?>
