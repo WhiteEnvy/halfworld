@@ -43,6 +43,12 @@ for($i=0; $i<count($myhotels);$i++){
                 <i class='glyphicon glyphicon glyphicon-share-alt'></i>
             </a>
         </div>"; 
+     echo "<br>";
+     echo "<br>";
+     echo "<br>";
+     echo "<br>";
+     echo "<br>";
+     echo "test";
 }
 
 ?>
