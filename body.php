@@ -6,18 +6,10 @@ $urlParam = parse_url($url, PHP_URL_QUERY);
 //$mainUrl = mb_strimwidth($_SERVER['PHP_SELF'], 0, strlen($_SERVER['PHP_SELF'])-strlen(parse_url($url, PHP_URL_PATH))-1);
 //$mainUrl = $_SERVER['HTTP_HOST'];
 $mainUrl = "https://$_SERVER[HTTP_HOST]/index.php";
-
- 
-var_dump($mainUrl);
     
 $cssfile = '';
 $htmlfile = '';
-
-var_dump($action);
-var_dump($pathUrl);
-var_dump($urlParam);
-var_dump($mainUrl);
-
+ 
 if($urlParam){
     $cssfile = "<link rel='stylesheet' href='../css/fullDescription.css'></head>";
     $htmlfile = 'hotelDetail.php';
