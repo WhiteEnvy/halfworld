@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    font-size: 1.1em;
+    background-color: #0f0f0f;
+/*    font-family: 'Bauhaus 93';*/
+    /*    font-family: 'Harlow Solid Italic';*/
+/*    font-family: 'Eras Light ITC';*/
+    font-family: 'Agency FB';
+    background-image: url(../img/priroda-leto-trava-boke.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+.center{
+    text-align: center;
+    width: 100%;
+}
+
+#congratulations {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    color: aliceblue;
+}
+
+#congratulations h1 {
+    font-size: 7em;
+    letter-spacing: 1px;
+}
+
+#congratulations h3 span {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 5px;
+}
+
+#congratulations h3 {
+    font-size: 3.5em;
+}
+
+.darkfilter {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding-top: 150px;
+ 
+}
+
+#main h1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Monotype Corsiva';
+    font-weight: bold;
+    color: #be5050;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+ul {
+    float: right;
+    overflow: hidden;
+}
+
+.nav {
+    position: fixed;
+    height: auto;
+    border-bottom: 2px dashed #cecece;
+    z-index: 900;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /*    margin-left: 2%;*/
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+} 
+
+li>a {
+    display: block;
+    margin: 0;
+    padding: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#logo {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 17px;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
