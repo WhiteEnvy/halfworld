@@ -4,6 +4,13 @@
     color: #d3d3d3;
 }
 
+p{
+    width: 60%;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
 .wrapper h2{
     text-align: center;
 }
