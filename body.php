@@ -3,8 +3,6 @@
 $action = $_SERVER['REQUEST_URI']; 
 $pathUrl = parse_url($url, PHP_URL_PATH); 
 $urlParam = parse_url($url, PHP_URL_QUERY); 
-//$mainUrl = mb_strimwidth($_SERVER['PHP_SELF'], 0, strlen($_SERVER['PHP_SELF'])-strlen(parse_url($url, PHP_URL_PATH))-1);
-//$mainUrl = $_SERVER['HTTP_HOST'];
 $mainUrl = "https://$_SERVER[HTTP_HOST]/index.php";
     
 $cssfile = '';

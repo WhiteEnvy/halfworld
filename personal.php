@@ -1,5 +1,4 @@
 <?php    
-//session_start(); 
 include("connect.inc.php");
 $username = $_SESSION['login_user'];
 $userData = $conn->prepare("SELECT * FROM users WHERE username='$username'");
