@@ -1,15 +1,16 @@
 <?php
 var_dump('before_head');
 $action = $_SERVER['REQUEST_URI'];
+var_dump('actionWork');
 $pathUrl = parse_url($url, PHP_URL_PATH);
+var_dump('pathUrl');
 $urlParam = parse_url($url, PHP_URL_QUERY);
-
+var_dump("urlParam");
 $mainUrl = mb_strimwidth($_SERVER['PHP_SELF'], 0, strlen($_SERVER['PHP_SELF'])-strlen(parse_url($url, PHP_URL_PATH))-1);
 
 $cssfile = '';
 $htmlfile = '';
 
-var_dump("something");
 var_dump($action);
 var_dump($pathUrl);
 var_dump($urlParam);
@@ -46,7 +47,7 @@ echo
 echo $cssfile;
  
 echo "<body>";
-var_dump('body');
+
 session_start(); 
 $username = $_SESSION ? $_SESSION['login_user'] : "";
 
