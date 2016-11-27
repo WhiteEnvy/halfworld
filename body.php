@@ -1,4 +1,5 @@
 <?php
+var_dump('before_head');
 $action = $_SERVER['REQUEST_URI'];
 $pathUrl = parse_url($url, PHP_URL_PATH);
 $urlParam = parse_url($url, PHP_URL_QUERY);
@@ -39,7 +40,7 @@ echo
 echo $cssfile;
  
 echo "<body>";
-
+var_dump('body');
 session_start(); 
 $username = $_SESSION ? $_SESSION['login_user'] : "";
 
