@@ -1,6 +1,7 @@
 <?php
     include("connect.inc.php");
     var_dump('qdhoiqwhdo');
+
     try {
 	
 	$conn = new PDO("mysql:host=$host;dbname=$dbname", "$login", "$password");	
