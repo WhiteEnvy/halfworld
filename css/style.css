@@ -79,9 +79,9 @@ ul {
 .nav {
     position: fixed;
     height: auto;
-    border-bottom: 2px dashed #cecece;
+/*    border-bottom: 2px dashed #cecece;*/
     z-index: 900;
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: rgba(0, 0, 0, 0.63);
 }
 
 li {
