@@ -50,10 +50,10 @@ echo " <div class='nav col-md-12'>
             <li class='col-md-2 col-sm-12'><a href='$mainUrl/about-us'>ABOUT US</a></li>
             <li class='col-md-2 col-sm-12'><a href='$mainUrl/contact'>CONTACT</a></li>";
 if($username){
-    echo "<li class='col-md-2 col-sm-12' id='logIn'><a href='$mainUrl/personal'>MY ORDERS</i></a></li>"; 
+    echo "<li class='col-md-2 col-sm-12' id='logIn'><a href='$mainUrl/personal'>MY ORDERS</a></li>"; 
 }
 else{
-    echo "<li class='col-md-2 col-sm-12' id='logIn'><a href='$mainUrl/login'>LOG IN</i></a></li>";
+    echo "<li class='col-md-2 col-sm-12' id='logIn'><a href='$mainUrl/login'>LOG IN</a></li>";
 }
 echo "</ul></div>";
 
