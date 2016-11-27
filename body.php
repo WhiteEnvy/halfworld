@@ -6,7 +6,8 @@ $pathUrl = parse_url($url, PHP_URL_PATH);
 var_dump($pathUrl);
 $urlParam = parse_url($url, PHP_URL_QUERY);
 var_dump($urlParam);
-$mainUrl = mb_strimwidth($_SERVER['PHP_SELF'], 0, strlen($_SERVER['PHP_SELF'])-strlen(parse_url($url, PHP_URL_PATH))-1);
+//$mainUrl = mb_strimwidth($_SERVER['PHP_SELF'], 0, strlen($_SERVER['PHP_SELF'])-strlen(parse_url($url, PHP_URL_PATH))-1);
+$mainUrl = $_SERVER['HTTP_HOST'];
 
 var_dump("mainUrl");
 var_dump($mainUrl);
