@@ -7,3 +7,10 @@
 .wrapper h2{
     text-align: center;
 }
+
+img{
+    width: 50%;
+    position: relative;
+    display: block;
+    margin: auto;
+}
