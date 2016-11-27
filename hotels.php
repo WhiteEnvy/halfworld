@@ -1,7 +1,20 @@
 <?php 
+    try {
+	include("connect.inc.php");
+	$conn = new PDO("mysql:host=$host;dbname=$dbname", "$login", "$password");	
+	   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
+	   $conn->exec("set names utf8");	
+        var_dump($conn);
+    }
+    catch (PDOException $erreur) {	
+	   echo "<p>Erreur : " . $erreur->getMessage() . "</p>\n";
+    }
+
 
 $stmt = $conn->prepare("SELECT hotels.name, hotels.description, hotels.image_url FROM hotels");
 $stmt->execute(); 
+var_dump($stmt);
+var_dump($stmt->execute());
 
 foreach($stmt as $q){
      echo"
