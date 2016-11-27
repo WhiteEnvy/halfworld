@@ -81,6 +81,7 @@ ul {
     height: auto;
     border-bottom: 2px dashed #cecece;
     z-index: 900;
+    background-color: rgba(0, 0, 0, 0.77);
 }
 
 li {
