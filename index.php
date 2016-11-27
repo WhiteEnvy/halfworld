@@ -16,8 +16,8 @@
     $newUrl = parse_url($action, PHP_URL_PATH);
     $url = substr($action, strrpos($action, '/') + 1);
     
-var_dump($url);
-var_dump('body?');
+    var_dump($url);
+    var_dump('body?');
     include("body.php");  
 
     $conn = null;

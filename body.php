@@ -9,6 +9,7 @@ $mainUrl = mb_strimwidth($_SERVER['PHP_SELF'], 0, strlen($_SERVER['PHP_SELF'])-s
 $cssfile = '';
 $htmlfile = '';
 
+var_dump("something");
 var_dump($action);
 var_dump($pathUrl);
 var_dump($urlParam);
