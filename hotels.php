@@ -14,7 +14,7 @@ $stmt = $conn->prepare("SELECT hotels.name, hotels.description, hotels.image_url
 $stmt->execute(); 
 
 $myhotels = $stmt->fetchAll();
-var_dump($myhotels);
+
 foreach($myhotels as $q){
      echo"
         <div class='item col-md-8 col-md-offset-2'>
